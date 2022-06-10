@@ -185,7 +185,11 @@ button {
 }
 
 .services-list {
-    margin-block: 2rem;
+    --gap: 1.25rem;
+
+    gap: var(--gap);
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
 }
 
 .services__item, 
@@ -209,7 +213,7 @@ button {
 }
 
 
-
+/*** Media Queries ***/
 @media (min-width: 950px) {
     .download {
         flex-direction: row;
@@ -218,29 +222,9 @@ button {
     .content {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        max-width: 75rem; /* 1200px */
+        max-width: 75rem; 
         margin-inline: auto;
     }
-
-    .content-body {
-        max-width: 800px;
-    }
-
-    .content-services {
-        position: relative;
-    }
-
-    /* .content-services::after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 1000%;
-        z-index: -1;
-        background-color: var(--clr-grey-100);
-        top: 0;
-        right: -100%;
-        left: 0;
-    } */
 
     .services-list {
         max-width: 350px;
