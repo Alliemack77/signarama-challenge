@@ -189,7 +189,7 @@ button {
 
     gap: var(--gap);
     margin-block-start: 2rem;
-    margin-block-end: 2rem;
+    margin-block-end: 3rem;
 }
 
 .services__item, 
