@@ -141,6 +141,14 @@ button {
     cursor: pointer;
 }
 
+.btn.bg-accent:hover {
+    background-color: hsl(352, 74%, 50%);
+}
+
+.btn.bg-black:hover {
+    background-color: hsl(0, 0%, 15%);
+}
+
 
 /*** General Styling ***/
 .header {
