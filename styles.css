@@ -13,7 +13,7 @@
     --fs-800: clamp(1.875rem, 6vw, 2.25rem);
     --fs-700: clamp(1.25rem, 3vw, 2rem); /* 32px */
     --fs-600: 1.875rem; /* 30px */
-    --fs-500: 1.625rem;
+    --fs-500: clamp(1.25rem, 4vw, 1.625rem); /* 26px */
     --fs-400: clamp(1rem, 2vw, 1.5rem); /* 24px */
     --fs-300: 1.25rem;
     --fs-200: 1.125rem;
@@ -173,7 +173,7 @@ button {
 
 /* content */
 .content-body {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem 2rem 1rem;
 }
 
 .content-body > * + * {
@@ -190,10 +190,9 @@ button {
 
 .services__item, 
 .capabilities__item {
-    --gap: 1rem;
+    --gap: .75rem;
 
     gap: var(--gap);
-    align-items: center;
 }
 
 /* capabilities */
@@ -225,6 +224,26 @@ button {
 
     .content-body {
         max-width: 800px;
+    }
+
+    .content-services {
+        position: relative;
+    }
+
+    /* .content-services::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1000%;
+        z-index: -1;
+        background-color: var(--clr-grey-100);
+        top: 0;
+        right: -100%;
+        left: 0;
+    } */
+
+    .services-list {
+        max-width: 350px;
     }
 
     .capabilities-list {
